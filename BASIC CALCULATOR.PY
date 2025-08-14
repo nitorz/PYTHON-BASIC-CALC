@@ -1,25 +1,19 @@
 # Simple Calculator
 
-# Ask for user input
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-operation = input("Enter the operation (+, -, *, /): ")
+a = float(input("First number: "))
+b = float(input("Second number: "))
+op = input("Operation (+, -, *, /): ")
 
-# Perform the chosen operation
-if operation == "+":
-    result = num1 + num2
-    print(f"{num1} + {num2} = {result}")
-elif operation == "-":
-    result = num1 - num2
-    print(f"{num1} - {num2} = {result}")
-elif operation == "*":
-    result = num1 * num2
-    print(f"{num1} * {num2} = {result}")
-elif operation == "/":
-    if num2 != 0:
-        result = num1 / num2
-        print(f"{num1} / {num2} = {result}")
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    if b != 0:
+        print(a / b)
     else:
-        print("Error: Division by zero is not allowed.")
+        print("Can't divide by zero")
 else:
-    print("Invalid operation! Please enter +, -, * or /.")
+    print("Invalid operation")
